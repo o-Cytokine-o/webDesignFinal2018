@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+body{
+    background-color: #1C1C1C;
+    font-size: 15px;
+    line-height: 2;
+    color: floralwhite;
+}
+
+header {
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 500px;
+}
+
+a {
+    text-decoration: none;
+    color: floralwhite;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+.glnav {
+    margin: 0 auto;
+}
+
+.glnav li {
+    float: left;
+    margin: 0 20px;
+    font-size: 24px;
+}
+
+
+.nav li {
+    text-decoration: none;
+}
+
+.content {
+    
+}
+
+#wrap {
+    clear: both;
+}
