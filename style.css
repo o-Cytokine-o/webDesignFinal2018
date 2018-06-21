@@ -1,20 +1,37 @@
 @charset "utf-8";
 
 body{
+    background-image: url(images/background.jpg);
     background-color: #1C1C1C;
     font-size: 15px;
-    line-height: 2;
+    
     color: floralwhite;
+    background-attachment: fixed;
+    margin: 0;
+    
+    background-repeat: no-repeat;
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
 }
 
 header {
-    width: 960px;
-    height: 100px;
-    margin: 0 auto;
+    
+    
+    
 }
 
 .logo {
-    width: 500px;
+    /*background-image: url(images/bf4_logo.png);*/
+    width: 600px;
+    height: 150px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 30px auto;
+
 }
 
 a {
@@ -22,30 +39,170 @@ a {
     color: floralwhite;
 }
 
-ul {
-    list-style: none;
+.glnav {
+    height: 50px;
+    text-align: center;
+    margin: ;
+    padding-top: 12px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.glnav:hover{
+    cursor: pointer;
     
 }
 
-.glnav {
-    margin: 0 auto;
-}
-
 .glnav li {
-    float: left;
-    margin: 0 20px;
-    font-size: 24px;
+    display: inline;
+    text-decoration: none;
+    margin-top: ;
+    padding-top: 23px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.5s all ease 0s;
+
 }
 
+
+.glnav li:hover {
+    border-bottom: solid 3px cornsilk;
+    transform: translateY(10px),scaleX(1.5);
+    background-color: orange;
+    }
+
+.glnav li a{
+    width:auto;
+    font-size: 24px;
+    padding:0px 20px;  
+     
+}
+
+.glnav li a::after {
+    
+}
 
 .nav li {
     text-decoration: none;
 }
 
-.content {
-    
+.content img{
+    width:250px;
+    height: 170px;
 }
 
+.content {
+    /*background-color: #1C1C1C;*/
+    width:800px;
+    margin: 0 auto;
+}
+
+.menu {
+	float: left;
+}
+
+.menu1:before {
+	position: relative;
+	content: "兵科";
+	text-align: center;
+	border-bottom: solid 3px orange;
+	padding: 10px;
+	margin: 30px 70px;
+	display: block;
+	
+}
+.menu2:before {
+	position: relative;
+	content: "銃火器";
+	text-align: center;
+	border-bottom: solid 3px orange;
+	padding: 10px;
+	margin: 30px 70px;
+	display: block;
+	
+}
+.menu3:before {
+	position: relative;
+	content: "兵器";
+	text-align: center;
+	border-bottom: solid 3px orange;
+	padding: 10px;
+	margin: 30px 70px;
+	display: block;
+	
+}
+.menu4:before {
+	position: relative;
+	content: "ゲームモード";
+	text-align: center;
+	border-bottom: solid 3px orange;
+	padding: 10px;
+	margin: 30px 70px;
+	display: block;
+	
+}
+.menu5:before {
+	position: relative;
+	content: "マップ";
+	text-align: center;
+	border-bottom: solid 3px orange;
+	padding: 10px;
+	margin: 30px 70px;
+	display: block;
+	
+}
+.menu5 {
+	margin-left: 0 auto;
+	width: 100%;
+	
+}
+.menu5 ul {
+	list-style: none;
+	padding: 0;
+    margin: 0;
+}
+.menu5 img {
+    float: left;
+}
+
+.menu5 figure.snip1437 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px auto;
+  max-width: 750px;
+  max-height: 170px;
+  width: 1000px;
+  color: #ffffff;
+  text-align: right;
+  font-size: 16px;
+  background-color: #000000;
+  text-transform: uppercase;
+}
+.menu5 figure.snip1437:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -30%;
+  right: 70%;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transform: skew(20deg) translateX(-75%);
+  transform: skew(20deg) translateX(-75%);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
 #wrap {
     clear: both;
+}
+
+footer {
+	margin: 30px;
+	clear: both;
+}
+
+@media screen and (max-width: 600px) {
+	.glnav li {
+		display: block;
+	}
 }
