@@ -4,11 +4,9 @@ body{
     background-image: url(images/background.jpg);
     background-color: #1C1C1C;
     font-size: 15px;
-    
     color: floralwhite;
     background-attachment: fixed;
     margin: 0;
-    
     background-repeat: no-repeat;
 }
 
@@ -86,7 +84,26 @@ a {
 .nav li {
     text-decoration: none;
 }
-
+.menu_b {
+    display: none;
+    transform: translateY(-30%);
+    transition: .1s ease-in-out;
+}
+.menu_b p {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.menu_b input {
+    display: none;
+}
+.show_menu li {
+    display: block;
+}
+#menub:checked ~ .show_menu {
+    transform: translateY(0%);
+    display: block;
+}
 .content img{
     width:250px;
     height: 170px;
@@ -259,7 +276,7 @@ h1 {
     border-bottom: 1px solid white;
 }
 .jukaki li {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(30,30,30,0.8);
     font-size: 18px;
     list-style: none;
     padding: 10px;
@@ -309,6 +326,71 @@ border-width: 6px 0 6px 9px;
 border-color: transparent transparent transparent #eee;
 }
 /*------*/
+/*gamerule*/
+.gamerule {
+    width: 100%;
+    
+}
+.gamerule div {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    padding-top: 60px;
+    margin: 10px 0;
+}
+.gamerule h2 {
+    text-shadow: 0 0 15px #ddd;
+    font-size: 40px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.gamerule p {
+    width: 90%;
+    margin: 5% auto 1% auto;
+    text-shadow: 0 0 15px rgba(15,15,15,1);
+    font-weight: 700;
+    font-size: 16px;
+    
+    
+}
+.gamerule img {
+    height: 400px;
+}
+.conq {
+    background-image: url(images/gamerule_con.jpg);
+}
+.domi {
+    background-image: url(images/gamerule_dom.png);
+}
+.team {
+    background-image: url(images/gamerule_team.png);
+}
+.rush {
+    background-image: url(images/gamerule_rush.jfif);
+}
+.obli {
+    background-image: url(images/gamerule_obli.png);
+}
+.air {
+    background-image: url(images/gamerule_air.jpg);
+}
+.cap {
+    background-image: url(images/gamerule_kyap.jpg);
+}
+.carr {
+    background-image: url(images/gamerule_kyari.jpg);
+}
+.chai {
+    background-image: url(images/gamerule_chain.jpg);
+}
+.gunmas {
+    background-image: url(images/gamerule_gun.jpg);
+}
+
+/*------------------*/
 #wrap {
     clear: both;
 }
@@ -322,4 +404,14 @@ footer {
 	.glnav li {
 		display: block;
 	}
+    
+}
+
+@media screen and (max-width: 800px) {
+    .glnav li {
+        display: none;
+    }
+    .menu_b {
+        display: block;
+    }
 }
